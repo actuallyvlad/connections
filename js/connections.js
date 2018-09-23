@@ -107,15 +107,15 @@ function createSVG() {
 
   // set up axis ranges
   let rangeX = function(nodes) {
-    x1 = d3.min(nodes, function(node){ return node.x });
-    x2 = d3.max(nodes, function(node){ return node.x });
+    x1 = d3.min(nodes, n => n.x);
+    x2 = d3.max(nodes, n => n.x);
 
     return [x1, x2];
   };
 
   let rangeY = function(nodes) {
-    y1 = d3.min(nodes, function(node){ return node.y });
-    y2 = d3.max(nodes, function(node){ return node.y });
+    y1 = d3.min(nodes, n => n.y);
+    y2 = d3.max(nodes, n => n.y);
 
     return [y1, y2];
   };
