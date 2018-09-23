@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body .container-fluid, .container-fluid .row-fluid, #canvas {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  font-family: 'Lato', sans-serif;
+  text-align: right;
+}
+
+.row-fluid div:nth-of-type(1) {
+  border: 2px solid #715aff;
+  background-color: #a682ff;
+  color: white;
+  padding-top: 5px;
+  font-size: 1.2rem;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #623cea;
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: #fb5607;
+  border: 3px solid white;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline:0;
+}
