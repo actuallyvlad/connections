@@ -42,10 +42,7 @@ function populateEdges() {
     if (Math.random() >= 0.5) {
       let from = Math.floor(Math.random() * nodes.length + 1);
       let to = Math.floor(Math.random() * nodes.length + 1);
-      // skip nodes pointing to themselves
-      while (to === from) {
-        to = Math.floor(Math.random() * nodes.length + 1);
-      }
+
       let e = {
         numberFrom: from,
         numberTo: to
