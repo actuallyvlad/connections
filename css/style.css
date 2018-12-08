@@ -16,11 +16,17 @@ body .container-fluid, .container-fluid .row-fluid, #canvas {
 }
 
 .row-fluid div:nth-of-type(1) {
-  border: 2px solid #715aff;
-  background-color: #a682ff;
+  background: rgb(255,255,255);
+  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(166,130,255,1) 73%);
+  background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(166,130,255,1) 73%);
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(166,130,255,1) 73%); 
   color: white;
-  padding-top: 5px;
+  padding: 5px;
   font-size: 1.2rem;
+}
+
+.col-lg-12 p {
+  margin: 5px;
 }
 
 .highlight {
@@ -30,14 +36,22 @@ body .container-fluid, .container-fluid .row-fluid, #canvas {
 }
 
 .button {
-  background-color: #fb5607;
   border: 3px solid white;
   border-radius: 20px;
   font-weight: bold;
   color: white;
   cursor: pointer;
+  margin: 5px -5px 0 5px;
 }
 
 .button:focus {
-  outline:0;
+  outline: 0;
+}
+
+.button-random {
+  background-color: #fb5607;
+}
+
+.button-reset {
+  background-color: #0756fb;
 }
